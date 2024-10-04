@@ -1,0 +1,13 @@
+.horrogame{
+   /* border: 2px solid green; */
+    color: white;
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+.horrorlist{
+    list-style: none;
+    /* border: 2px solid red; */
+}

@@ -1,0 +1,11 @@
+.game-div{
+    background-color: #29232C;
+    width: 100%;
+    overflow-y: auto;
+    /* border: 2px solid green; */
+    color: white;
+}
+.zombie-heading{
+    margin-left: 80px;
+    margin-top: 40px;
+}

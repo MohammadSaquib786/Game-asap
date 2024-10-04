@@ -1,0 +1,47 @@
+.CardDiv{
+    /* margin-left: 100px; */
+    /* border: 2px solid black; */
+   height: 360px;
+   width: 100% ;
+     
+}
+.top-container{
+    margin-left: 60px;
+    margin-right: 70px;
+    /* border: 2px solid gainsboro; */
+}
+.Game-list{
+    /* margin-top: 20px; */
+    color: white; 
+    /* display: flex; */
+    height: 350px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* gap: 10px; */
+    /* border: 2px solid blue; */
+    overflow-x: hidden;
+}
+.slick-slide > div {
+  margin: 0px 20px;
+  overflow: hidden;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+ 
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  .Search-bar{
+    margin-top: 30px;
+    /* margin-left: 80px; */
+    /* margin-top: 60px; */
+    width: 400px;
+    height: 60px;
+    background-color: #29232C;
+    border: none;
+    color: white;
+    font-size: x-large;
+  }

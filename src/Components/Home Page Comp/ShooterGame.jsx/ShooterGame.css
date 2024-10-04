@@ -1,0 +1,13 @@
+.shooter-div{
+    display: flex;
+    width: 100%;
+    padding:0 80px;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* border: 2px solid black; */
+}
+.Shooter-Heading{
+    margin-left: 80px;
+    color: #ffffff;
+    /* margin-top: 10px; */
+}

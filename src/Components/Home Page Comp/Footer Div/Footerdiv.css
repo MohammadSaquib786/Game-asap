@@ -1,0 +1,34 @@
+.Navbar-container{
+    /* border: 2px solid green; */
+    color: white;
+    width: 250px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.image{
+  cursor: pointer;
+}
+.dowl-list{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.dowl-button {
+    align-items: center;
+    margin-top: 5px;
+    background-color: green;
+    color: #3b82f6;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 200px;
+    height: 30px;
+    transition: 0.5s;
+  }
+  
+.dowl-button:hover {
+    background-color: #3b82f6;
+    color: #fff;
+  }
+  

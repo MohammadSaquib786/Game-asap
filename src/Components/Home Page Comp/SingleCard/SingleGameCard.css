@@ -1,0 +1,11 @@
+.unorderlist{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 10px; */
+    /* border: 2px solid red; */
+    width: 320px;
+    height: 298px;
+    cursor: pointer;
+    /* flex-wrap: wrap; */
+}

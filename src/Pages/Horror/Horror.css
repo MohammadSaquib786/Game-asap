@@ -1,0 +1,17 @@
+.horrormaindiv{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid yellow; */
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #29232C;
+    color: white;
+    /* border: 2px solid gray; */
+}
+.horror-heading{
+    margin-left: 80px;
+    margin-top: 40px;   
+    /* border: 2px solid  gainsboro; */
+    height: 50px;
+}

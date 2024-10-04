@@ -1,0 +1,89 @@
+.login-div{
+    /* border: 2px solid green; */
+    width: 100vw;
+    color: #fff;
+    background-color: #44334D;
+}
+.head-login{
+  margin: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.login-heading{
+   margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid green; */
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* margin: 80px; */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* border: 2px solid black;  */
+}
+
+.input-text{
+    display: flex;
+    margin: 40px;
+}
+/* From Uiverse.io by Yaya12085 */ 
+.button-singup {
+    max-width: 320px;
+    display: flex;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    gap: 0.75rem;
+    color: rgb(65, 63, 63);
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .6s ease;
+  }
+  
+  .button-singup svg {
+    height: 24px;
+  }
+  .button-singup:hover {
+    transform: scale(1.02);
+    background-color: #ab03ff;
+  }
+
+  /* From Uiverse.io by ErzenXz */ 
+.input-text {
+    width: 100%;
+    max-width: 320px;
+    height: 45px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+  }
+  
+  .input-text:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+  }
+  
+  .input-text:active {
+    transform: scale(0.95);
+  }
+  
+  .input-text:focus {
+    border: 2px solid grey;
+  }
