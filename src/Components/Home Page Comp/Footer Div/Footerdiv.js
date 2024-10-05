@@ -10,8 +10,7 @@ function Footerdiv({ game }) {
       <li className='dowl-list'>
         <img className='image' src={game.thumbnail} alt={game.title} width='230px' height='200px'  />
         <p style={{marginTop:'10px'}}> {game.title}</p>
-        {/* <button class="dowl-button" onClick={clickHandler}>Download Now</button> */}
-      </li>
+      </li> 
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, Route, useLocation} from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import Sidebar from './Pages/Sidebar/Sidebar';
 import Game from './Pages/Zombie/Game';
@@ -14,14 +14,14 @@ function App() {
     <div className="App">
       {location.pathname !== '/login' && <Sidebar />}
       <Routes>
+
         <Route path='/' element={<Home />} />
         <Route path='/ZombieGame' element={<Game />} />
         <Route path='/HorrorGame' element={<Horror />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/detail/:id' element={<DetailPage/>}/>
+        <Route path='/detail/:id' element={<DetailPage />} />
       </Routes>
       <Routes>
-     
       </Routes>
     </div>
   );

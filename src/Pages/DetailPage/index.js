@@ -3,6 +3,7 @@ import './style.css';
 import { CiStar } from "react-icons/ci";
 import Slider from 'react-slick/lib/slider';
 import { useParams } from 'react-router-dom';
+
 const Index = () => {
   const [Data, setData] = useState(null);
   const settings = {
@@ -23,6 +24,7 @@ const Index = () => {
       'x-rapidapi-host': 'free-to-play-games-database.p.rapidapi.com'
     }
   };
+
   useEffect(() => {
     fetchdata();
   }, []);
@@ -31,11 +33,26 @@ const Index = () => {
     try {
       const response = await fetch(url, options);
       const result = await response.json();
+
       setData(result);
     } catch (error) {
       console.log('error');
     }
   }
+
+  const truncateDescription = (description) => {
+    const word = description.split('');
+    if(word.length > 1000) {
+      return word.slice(0, 1000).join('') + '....';
+    }
+    else if(word.length < 100){
+      return description;
+    }
+    else{
+      return word.join('');
+    }
+  }
+
   return (
     <div className='main-div'>
       {Data ? (
@@ -46,7 +63,7 @@ const Index = () => {
               <h1>{Data.title}</h1>
               <h3> Release Date : {Data.release_date}</h3>
               <CiStar style={{ color: 'yellow' }} /> <CiStar style={{ color: 'yellow' }} /> <CiStar style={{ color: 'yellow' }} /> <CiStar style={{ color: 'yellow' }} /> <CiStar />
-              <p className='desc-para'>{Data.description}</p>
+              <p className='desc-para'>{truncateDescription(Data.description)}</p>
             </div>
           </div>
           <div className='datils-div'>
@@ -88,11 +105,11 @@ const Index = () => {
           </div>
         </div>
       ) : (
-        <p>Loading...</p>
+        <div class="loader"></div>
       )}
 
       {Data?.screenshots && Data?.screenshots.length > 0 && (
-        <div className="screenshots-container">
+         <div className="screenshots-container">
           <h1>Screenshots</h1>
           <div className="screenshots-grid">
           <Slider {...settings} className='slider'>
@@ -102,9 +119,9 @@ const Index = () => {
              </Slider>
           </div>
         </div>
-      )}
+        ) }
     </div>
-  )
+)
 }
 
 export default Index

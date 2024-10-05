@@ -1,5 +1,6 @@
 .nav-bar{
     margin: 5px 80px;
+    width: calc(100vw - 200px);
 }
 
 .login-button {
