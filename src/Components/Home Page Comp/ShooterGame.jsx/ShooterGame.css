@@ -1,13 +1,55 @@
 .shooter-div{
     display: flex;
+    justify-content: space-between;
     width: 100%;
-    padding:0 80px;
+    padding:0 60px;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
-    /* border: 2px solid black; */
 }
 .Shooter-Heading{
     margin-left: 80px;
     color: #ffffff;
-    /* margin-top: 10px; */
+}
+
+@media screen and (max-width: 965px) {
+    .shooter-div{
+        padding:0 30px;
+    }
+    .Shooter-Heading{
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width:782px){
+    .shooter-div{
+        padding:0 15px;
+    }
+    .Shooter-Heading{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:681px){
+    .shooter-div{
+        padding:0 8px;
+    }
+    .Shooter-Heading{
+        margin-left: 6px;
+    }
+}
+
+@media screen and (max-width:523px){
+    .shooter-div{
+        padding:0 4px;
+    }
+    .Shooter-Heading{
+        margin-left: 3px;
+    }
+}
+@media screen and (max-width:500px){
+    .shooter-div{
+        padding:0 0px;
+    }
+    .Shooter-Heading{
+        margin-left: 0px;
+    }       
 }

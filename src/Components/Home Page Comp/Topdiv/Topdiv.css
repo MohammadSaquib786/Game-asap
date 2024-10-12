@@ -1,47 +1,111 @@
 .CardDiv{
-    /* margin-left: 100px; */
-    /* border: 2px solid black; */
    height: 360px;
-   width: 100% ;
-     
+   width: 100% ;     
 }
 .top-container{
     margin-left: 60px;
     margin-right: 70px;
-    /* border: 2px solid gainsboro; */
-}
-.Game-list{
-    /* margin-top: 20px; */
-    color: white; 
-    /* display: flex; */
-    height: 350px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    /* gap: 10px; */
-    /* border: 2px solid blue; */
-    overflow-x: hidden;
+   
 }
 .slick-slide > div {
   margin: 0px 20px;
   overflow: hidden;
 }
 ::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+  .Game-list{
+      color: white; 
+      height: 350px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      overflow-x: hidden;
+  }
+  .Game-list2{
+    display: none;
+    color: white; 
+    height: 350px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.Game-list3{
+  display: none;
+  color: white; 
+  height: 350px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+    @media (max-width:1200px){
+      .CardDiv{
+         height: 360px;
+         width: 100% ;     
+      }
+      .top-container{
+          margin-left: 15px;
+          margin-right: 20px; 
+      }
+      .Game-list2{
+        display: none;
+      }
+      .Game-list3{
+        display: none;
+      }
+   
+  }
+
+  @media (max-width:1000px){
+    .Game-list{
+      display: none;
+    }
+    .Game-list2{
+      display: block;
+    }
+    .Game-list3{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width:722px) {
+    .Game-list{
+      display: none;
+    }
+    .Game-list2{
+      display: none;
+    }
+    .Game-list3{
+      display: block;
+    }
+    .top-container{
+      margin-left: 10px;
+      margin-left: 15px;
+      margin-right: 20px;
+  } 
+}
+
+@media screen and (max-width: 500px) {
+  .Game-list{
     display: none;
   }
- 
-.nav-bar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-  .Search-bar{
-    margin-top: 30px;
-    /* margin-left: 80px; */
-    /* margin-top: 60px; */
-    width: 400px;
-    height: 60px;
-    background-color: #29232C;
-    border: none;
-    color: white;
-    font-size: x-large;
+  .Game-list2{
+    display: none;
   }
+  .Game-list3{
+    display: block;
+  }
+  .top-container{
+    margin-left: 4px;
+    margin-right: 4px;
+  
+} 
+}

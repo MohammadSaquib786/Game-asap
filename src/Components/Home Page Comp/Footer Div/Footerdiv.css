@@ -1,34 +1,218 @@
 .Navbar-container{
-    /* border: 2px solid green; */
     color: white;
     width: 250px;
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
 }
 .image{
   cursor: pointer;
+    width:230px;
+    height:200px;
 }
-.dowl-list{
-    margin-top: 10px;
+
+@media screen and (max-width: 1215px) {
+  .Navbar-container{
+   
+    color: white;
+    width: 300px;
+    margin-top: 15px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
-.dowl-button {
-    align-items: center;
-    margin-top: 5px;
-    background-color: green;
-    color: #3b82f6;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
+.image{
+  cursor: pointer;
+    width:290px;
+    height:200px;
+}
+}
+@media screen and (max-width: 1115px) {
+  .Navbar-container{
+    color: white;
+    width: 250px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.image{
+  cursor: pointer;
+    width:240px;
+    height:200px;
+}
+}
+
+
+@media screen and (max-width: 965px) {
+  .Navbar-container{
+    color: white;
+    width: 250px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.image{
+  cursor: pointer;
+    width:240px;
+    height:200px;
+}
+}
+
+@media screen and (max-width:904px){
+  .Navbar-container{
+    color: white;
     width: 200px;
-    height: 30px;
-    transition: 0.5s;
-  }
-  
-.dowl-button:hover {
-    background-color: #3b82f6;
-    color: #fff;
-  }
-  
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.image{
+  cursor: pointer;
+    width:190px;
+    height:200px;
+}
+}
+
+@media screen and (max-width:722px){
+  .Navbar-container{
+    color: white;
+    width: 280px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.image{
+  cursor: pointer;
+    width:270px;
+    height:200px;
+}
+}
+
+@media screen and (max-width:666px){
+  .Navbar-container{
+    color: white;
+    width: 260px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.image{
+  cursor: pointer;
+    width:250px;
+    height:200px;
+}
+}
+@media screen and (max-width:626px){
+  .Navbar-container{
+    color: white;
+    width: 240px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.image{
+  cursor: pointer;
+    width:230px;
+    height:200px;
+}
+}
+@media screen and (max-width:585px){
+  .Navbar-container{
+    margin-left: 20px;
+    color: white;
+    width: 210px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.image{
+  cursor: pointer;
+    width:200px;
+    height:200px;
+}
+}
+@media screen and (max-width:565px){
+  .Navbar-container{
+    color: white;
+    width: 190px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.image{
+    cursor: pointer;
+    width:180px;
+    height:200px;
+}
+}
+@media screen and (max-width:523px){
+  .Navbar-container{
+    color: white;
+    width: 180px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.image{
+    cursor: pointer;
+    width:170px;
+    height:200px;
+}
+}
+@media screen and (max-width:500px){
+  .Navbar-container{
+    color: white;
+    width: 210px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.image{
+    cursor: pointer;
+    width:200px;
+    height:200px;
+}
+}
+@media screen and (max-width:463px){
+  .Navbar-container{
+    color: white;
+    width: 200px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.image{
+    cursor: pointer;
+    width:195px;
+    height:180px;
+}
+}
+
+@media screen and (max-width:443px){
+  .Navbar-container{
+    color: white;
+    width: 180px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.image{
+    cursor: pointer;
+    width:177px;
+    height:180px;
+}
+}
+
+@media screen and (max-width:403px){
+  .Navbar-container{
+    color: white;
+    width: 165px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.image{
+    cursor: pointer;
+    width:160px;
+    height:180px;
+}
+}

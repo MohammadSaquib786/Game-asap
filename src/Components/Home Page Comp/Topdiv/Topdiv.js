@@ -12,10 +12,26 @@ function Topdiv() {
         infinite: true,
         speed: 1000,
         slidesToShow: 3,
-        slidesToScroll: 4,
+        slidesToScroll: 3,
+        autoplay: true,
+    };
+    const settings2 = {
+        dots: true,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 2,
+        slidesToScroll: 2,
         autoplay: true,
     };
 
+    const settings3 = {
+        dots: true,
+        infinite: true,
+        speed: 1100,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+    };
     const url = 'https://free-to-play-games-database.p.rapidapi.com/api/filter?tag=3d.mmorpg.fantasy.pvp&platform=pc';
     const options = {
         method: 'GET',
@@ -29,7 +45,7 @@ function Topdiv() {
         try {
             const response = await fetch(url, options);
             const result = await response.json();
-            const slicedArray = result.slice(0, 20);
+            const slicedArray = result.slice(0, 10);
             setGames(slicedArray);
         } catch (error) {
             console.error(error);
@@ -49,9 +65,26 @@ function Topdiv() {
                             </Link>))}
                     </Slider>
                 </div>
-
+                <div className='Game-list2'>
+                    <Slider {...settings2} className='slider2'>
+                        {games.map((game) => (
+                            <Link to={`/detail/${game.id}`}>
+                                <SingleGameCard game={game} />
+                            </Link>))}
+                    </Slider>
+                </div>
+                <div className="Game-list3">
+                    <Slider {...settings3} className='slider3'>
+                        {games.map((game) => (
+                            <Link to={`/detail/${game.id}`}>
+                                <SingleGameCard game={game} />
+                            </Link>))}
+                    </Slider>
+                </div>
             </div>
+
         </div>
+
     )
 }
 export default Topdiv

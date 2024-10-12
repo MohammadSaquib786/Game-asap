@@ -28,7 +28,7 @@ const ShooterGame = ({inputFocused, setAllGames, filteredGame}) => {
             const response = await fetch(url, options);
             const result = await response.json();
             setAllGames(result);
-            const slicedArray = result.slice(0,10);
+            const slicedArray = result.slice(0,200);
             setGames(slicedArray);   
         } catch (error) {
             console.error(error);

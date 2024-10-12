@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import './Header.css'
 import { useNavigate } from 'react-router-dom'
 import { ImCross } from "react-icons/im";
+import { GoSidebarCollapse } from 'react-icons/go';
 
-const Header = ({setInputFocused, allGames, setFilteredGames}) => {
+const Header = ({setInputFocused, allGames, setFilteredGames, show, setShow}) => {
     const navigate = useNavigate();
     const [searchInput, setSearchInput] = useState()
 
@@ -21,11 +22,12 @@ const Header = ({setInputFocused, allGames, setFilteredGames}) => {
   return (
     <div>
        <div className='nav-bar'>
-               <form action='' onSubmit={clickhandle}>
+               <form  className='form-input' action='' onSubmit={clickhandle}>
                 <input value={searchInput} onBlur={()=>setInputFocused(false)} onFocus={()=>setInputFocused(true)} onChange={(e) => setSearchInput(e.target.value)} className='Search-bar' type="text" placeholder='Quick Search....' />
                 <ImCross onClick={ClearState} color='white' style={{left:'-30px', position:'relative' , zIndex:'99', cursor:'pointer'}} />
                 </form>
                <button className='login-button' onClick={() => navigate('/login')}>Log In</button>
+            <GoSidebarCollapse onClick={()=>setShow(!show)}  className='side-button'/>  
             </div>
             
     </div>

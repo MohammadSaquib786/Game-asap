@@ -2,10 +2,115 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    /* margin-left: 10px; */
-    /* border: 2px solid red; */
     width: 320px;
     height: 298px;
     cursor: pointer;
-    /* flex-wrap: wrap; */
 }
+.img{
+    height:300px; 
+    width:400px;
+}
+
+@media screen and (max-width:1466px){
+    .img{
+        height:250px; 
+        width:360px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .img{
+        height: 250px;
+        width: 390px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .img{
+        height: 250px;
+        width: 340px;
+    }
+}
+
+
+@media screen and (max-width:722px){
+    .unorderlist{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+       
+        width: 550px;
+        height: 298px;
+        cursor: pointer;
+    }
+    .img{
+        height:250px; 
+        width:540px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .unorderlist{
+        margin-left: 15px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        width: 490px;
+        height: 298px;
+        cursor: pointer;
+    }
+    .img{
+        height:245px; 
+        width:480px;
+    }
+}
+
+@media screen and (max-width:680px){
+    .unorderlist{
+        margin-left: 15px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        height: 298px;
+        cursor: pointer;
+    }
+    .img{
+        height:245px; 
+        width:440px;
+    }
+}
+
+@media screen and (max-width:630px){
+    .unorderlist{
+        margin-left: 15px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 298px;
+        cursor: pointer;
+    }
+    .img{
+        height:245px; 
+        width:390px;
+    }
+}
+
+
+
+@media screen and (max-width:500px){
+    .unorderlist{
+       
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        width: 432px;
+        height: 298px;
+        cursor: pointer;
+    }
+    .img{
+        height:245px; 
+        width:428px;
+    }
+}
+
