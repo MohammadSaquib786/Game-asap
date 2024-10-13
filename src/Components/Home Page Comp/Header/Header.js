@@ -6,7 +6,7 @@ import { GoSidebarCollapse } from 'react-icons/go';
 
 const Header = ({setInputFocused, allGames, setFilteredGames, show, setShow}) => {
     const navigate = useNavigate();
-    const [searchInput, setSearchInput] = useState()
+    const [searchInput, setSearchInput] = useState();
 
       function clickhandle(event) {
         event.preventDefault(); 
@@ -27,7 +27,7 @@ const Header = ({setInputFocused, allGames, setFilteredGames, show, setShow}) =>
                 <ImCross onClick={ClearState} color='white' style={{left:'-30px', position:'relative' , zIndex:'99', cursor:'pointer'}} />
                 </form>
                <button className='login-button' onClick={() => navigate('/login')}>Log In</button>
-            <GoSidebarCollapse onClick={()=>setShow(!show)}  className='side-button'/>  
+               <GoSidebarCollapse style={{cursor:'pointer'}}  onClick={()=>setShow(!show)}  className='side-button'/>  
             </div>
             
     </div>

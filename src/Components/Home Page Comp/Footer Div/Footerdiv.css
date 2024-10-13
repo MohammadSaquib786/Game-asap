@@ -216,3 +216,34 @@
     height:180px;
 }
 }
+
+@media screen and (max-width:370px){
+  .Navbar-container{
+    color: white;
+    width: 150px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.image{
+    cursor: pointer;
+    width:145px;
+    height:180px;
+}
+}
+
+@media screen and (max-width:340px){
+  .Navbar-container{
+    border: 2px solid yellow;
+    color: white;
+    width: 300px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.image{
+    cursor: pointer;
+    width:290px;
+    height:180px;
+}
+}

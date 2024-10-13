@@ -5,48 +5,43 @@ import { FaHome } from "react-icons/fa";
 import { IoGameController } from "react-icons/io5";
 import { SiEpicgames } from "react-icons/si";
 import { useLocation, useNavigate } from 'react-router-dom';
-import { GoSidebarCollapse } from "react-icons/go";
 
 
-function Sidebar({show, setShow}) {
+
+function Sidebar({ show, setShow }) {
   const [selectedOption, setSelectedOption] = useState("home")
-    const navigate = useNavigate();
-    const location = useLocation()
-    useEffect(()=>{
-      if(location.pathname==="/"){
-        setSelectedOption("home")
-      }else if(location.pathname==="/ZombieGame"){
-        setSelectedOption("zombie")
-      }else{
-        setSelectedOption("horror")
-      }
-    },[location])
-
-  
-   
+  const navigate = useNavigate();
+  const location = useLocation()
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setSelectedOption("home")
+    } else if (location.pathname === "/ZombieGame") {
+      setSelectedOption("zombie")
+    } else {
+      setSelectedOption("horror")
+    }
+  }, [location])
 
   return (
-
-    <div className='main-div' >
-      <div className='sidebar-container' >
+    <div >
+      <div className='sidebar-container'  >
       <img className='logo-img' src={logo} alt="" width='100px' height='100px' />
-        <div className='button'>
-          <button  className='sing-button' onClick={() => navigate('/')}>{<FaHome />} <br /> Home</button>
-          <button className='sing-button' onClick={() => navigate('/ZombieGame')} >{<IoGameController />} <br/> Zombie Games</button>
-          <button className='sing-button' onClick={() => navigate('/HorrorGame')}>{<SiEpicgames/>} <br/> Horror Games </button>
-        </div>
+      <div className='button'>
+        <button className='sing-button' onClick={() => navigate('/')}>{<FaHome />} <br /> Home</button>
+        <button className='sing-button' onClick={() => navigate('/ZombieGame')} >{<IoGameController />} <br /> Zombie Games</button>
+        <button className='sing-button' onClick={() => navigate('/HorrorGame')}>{<SiEpicgames />} <br /> Horror Games </button>
       </div>
-
-        <div className='side-bar-hide'>
+      </div>
+      <div className='side-bar-hide'>
         {
-          show &&  ( 
-            <div  className='sidebar-container2'> 
-            <img className='logo-img' src={logo} alt="" width='100px' height='100px' />
-            <div className='button'>
-              <button  className='sing-button' onClick={() => navigate('/')}>{<FaHome />} <br /> Home</button>
-              <button className='sing-button' onClick={() => navigate('/ZombieGame')} >{<IoGameController />} <br/> Zombie Games</button>
-              <button className='sing-button' onClick={() => navigate('/HorrorGame')}>{<SiEpicgames/>} <br/> Horror Games </button>
-            </div>    
+          show && (
+            <div className='sidebar-container2'>
+              <img className='logo-img' src={logo} alt="" width='100px' height='100px' />
+              <div className='button'>
+                <button className='sing-button' onClick={() => navigate('/')}>{<FaHome />} <br /> Home</button>
+                <button className='sing-button' onClick={() => navigate('/ZombieGame')} >{<IoGameController />} <br /> Zombie Games</button>
+                <button className='sing-button' onClick={() => navigate('/HorrorGame')}>{<SiEpicgames />} <br /> Horror Games </button>
+              </div>
             </div>
           )
         }

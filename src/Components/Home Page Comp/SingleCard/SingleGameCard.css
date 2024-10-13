@@ -1,5 +1,4 @@
 .unorderlist{
-    list-style: none;
     display: flex;
     flex-direction: column;
     width: 320px;
@@ -112,5 +111,21 @@
         height:245px; 
         width:428px;
     }
+}  
+@media screen and (max-width:370px){
+    .unorderlist{
+        border: 2px solid green;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+        height: 298px;
+        cursor: pointer;
+    }
+    .img{
+        width:350px;
+        height:245px; 
+    }
 }
+
 

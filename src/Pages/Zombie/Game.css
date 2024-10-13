@@ -2,10 +2,61 @@
     background-color: #29232C;
     width: 100%;
     overflow-y: auto;
-    /* border: 2px solid green; */
     color: white;
 }
 .zombie-heading{
-    margin-left: 80px;
+    margin-left: 70px;
     margin-top: 40px;
+}  
+.zombie-heading2{
+    display: none;
 }
+@media screen and (max-width:1506px) {
+    .zombie-heading{
+        margin-left: 60px;
+        margin-top: 35px;
+    }  
+    
+ }  
+ @media screen and (max-width:1286px) {
+    .zombie-heading{
+        margin-left: 50px;
+        margin-top: 30px;
+    }  
+ }
+ @media screen and (max-width:1106px) {
+    .zombie-heading{
+        margin-left: 40px;
+        margin-top: 25px;
+    }  
+ }
+
+ @media screen and (max-width:886px) {
+    .zombie-heading{
+        margin-left: 30px;
+        margin-top: 20px;
+    }  
+ }
+ 
+ @media screen and (max-width:777px) {
+    .zombie-heading{
+        margin-left: 20px;
+ 
+    }  
+ }
+ @media screen and (max-width:500px) {
+    .zombie-heading{
+        margin-left: 15px;
+    }  
+ }
+ @media screen and (max-width:500px) {
+    .zombie-heading{
+        /* margin-left: 15px; */
+        display: none;
+    }  
+    .zombie-heading2{
+        margin-top: 40px;
+        margin-left: 15px;
+        display: block;
+    }
+ }

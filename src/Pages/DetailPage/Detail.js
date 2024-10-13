@@ -3,8 +3,9 @@ import './style.css';
 import { CiStar } from "react-icons/ci";
 import Slider from 'react-slick/lib/slider';
 import { useParams } from 'react-router-dom';
+import { GoSidebarCollapse } from 'react-icons/go';
 
-const Index = () => {
+const Index = ({show, setShow}) => {
   const [Data, setData] = useState(null);
   const settings = {
     dots: true,
@@ -53,8 +54,23 @@ const Index = () => {
     }
   }
 
+  const truncateDescription1 = (description) => {
+    const word = description.split('');
+    if(word.length > 1000) {
+      return word.slice(0, 600).join('') + '....';
+    }
+    else if(word.length < 100){
+      return description;
+    }
+    else{
+      return word.join('');
+    }
+  }
+
+
   return (
     <div className='main-div'>
+      <GoSidebarCollapse style={{cursor:'pointer'}} onClick={()=>setShow(!show)}  className='side-button'/>
       {Data ? (
         <div>
           <div className='topleable-div'>
@@ -64,11 +80,14 @@ const Index = () => {
               <h3> Release Date : {Data.release_date}</h3>
               <CiStar style={{ color: 'yellow' }} /> <CiStar style={{ color: 'yellow' }} /> <CiStar style={{ color: 'yellow' }} /> <CiStar style={{ color: 'yellow' }} /> <CiStar />
               <p className='desc-para'>{truncateDescription(Data.description)}</p>
+              <p className='desc-para1'>{truncateDescription1(Data.description)}</p>
+              <p className='desc-para2'>{truncateDescription(Data.description)}</p>
             </div>
           </div>
+          <p className='desc-para3'>{truncateDescription(Data.description)}</p>
           <div className='datils-div'>
             <div className="datiles-div-left">
-             
+          
               <h4>Genre(s)</h4>
               <p>{Data.genre}</p>
            
@@ -110,7 +129,9 @@ const Index = () => {
 
       {Data?.screenshots && Data?.screenshots.length > 0 && (
          <div className="screenshots-container">
-          <h1>Screenshots</h1>
+          <h1 className='screen-short'>Screenshots</h1>
+          <h2 className='screen-short2'>Screenshots</h2>
+          <h3 className='screen-short3'>Screenshots</h3>
           <div className="screenshots-grid">
           <Slider {...settings} className='slider'>
             {Data.screenshots?.map((screenshot) => (

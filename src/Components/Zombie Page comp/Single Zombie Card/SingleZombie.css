@@ -1,20 +1,177 @@
 .zombie-single{
-        /* border: 2px solid green; */
     color: white;
-    width: 290px;
     padding-top: 10px;
+    width: 300px;
     margin: 10px;
     display: flex;
     flex-direction: row;
 }
 
-.zombielist{
-    list-style: none;
-}
-
 .CardImg{
-    width:295px;
+    width:290px;
     height:200px;
     border-radius: 8px;
     cursor: pointer;
 }
+
+@media screen and (max-width:1506px) {
+    .zombie-single{
+        padding-top: 10px;
+        width: 250px;
+        margin: 10px;
+        justify-content: space-evenly;
+    }
+    .CardImg{
+        width:240px;
+        height:200px;
+    }
+}   
+@media screen and (max-width:1286px) {
+    .zombie-single{
+        padding-top: 10px;
+        width: 210px;
+        margin: 10px;
+        justify-content: space-evenly;
+    }
+    .CardImg{
+        width:200px;
+        height:200px;
+    }
+}   
+@media screen and (max-width:1106px) {
+    .zombie-single{
+        padding-top: 10px;
+        width: 260px;
+        margin: 10px;
+        justify-content: space-evenly;
+    }
+    .CardImg{
+        width:250px;
+        height:200px;
+    }
+} 
+
+@media screen and (max-width:1017px) {
+    .zombie-single{
+        padding-top: 10px;
+        width: 220px;
+        margin: 10px;
+        justify-content: space-evenly;
+    }
+    .CardImg{
+        width:215px;
+        height:200px;
+    }
+} 
+@media screen and (max-width:886px) {
+    .zombie-single{
+        padding-top: 10px;
+        width: 190px;
+        margin: 10px;
+        justify-content: space-evenly;
+    }
+    .CardImg{
+        width:185px;
+        height:200px;
+    }
+} 
+
+@media screen and (max-width:777px) {
+    .zombie-single{
+        padding-top: 10px;
+        width: 270px;
+        margin: 10px;
+        justify-content: space-evenly;
+    }
+    .CardImg{
+        width:260px;
+        height:180px;
+    }
+} 
+@media screen and (max-width: 717px) {
+    .zombie-single{
+        padding-top: 10px;
+        width: 220px;
+        margin: 10px;
+        justify-content: space-evenly;
+    }
+    .CardImg{
+        width:210px;
+        height:180px;
+    }
+} 
+@media screen and (max-width: 606px) {
+    .zombie-single{
+        padding-top: 10px;
+        width: 180px;
+        margin: 10px;
+        justify-content: space-evenly;
+    }
+    .CardImg{
+        width:175px;
+        height:170px;
+    }
+} 
+@media screen and (max-width: 526px) {
+    .zombie-single{
+        padding-top: 10px;
+        width: 155px;
+        margin: 10px;
+        justify-content: space-evenly;
+    }
+    .CardImg{
+        width:150px;
+        height:170px;
+    }
+} 
+@media screen and (max-width: 500px) {
+    .zombie-single{
+        padding-top: 10px;
+        width: 180px;
+        margin: 10px;
+        justify-content: space-evenly;
+    }
+    .CardImg{
+        width:175px;
+        height:170px;
+    }
+} 
+@media screen and (max-width: 422px) {
+    .zombie-single{
+        padding-top: 10px;
+        width: 160px;
+        margin: 10px;
+        justify-content: space-evenly;
+    }
+    .CardImg{
+        width: 150px;
+        height:170px;
+    }
+} 
+
+@media screen and (max-width: 375px) {
+    .zombie-single{
+        padding-top: 10px;
+        width: 320px;
+        margin: 10px;
+        justify-content: space-evenly;
+    }
+    .CardImg{
+        width: 310px;
+        height:200px;
+    }
+} 
+
+
+@media screen and (max-width: 335px) {
+    .zombie-single{
+        padding-top: 10px;
+        width: 260px;
+        margin: 10px;
+        justify-content: space-evenly;
+    }
+    .CardImg{
+        width: 250px;
+        height:200px;
+    }
+} 

@@ -33,7 +33,7 @@
         padding:0 8px;
     }
     .Shooter-Heading{
-        margin-left: 6px;
+        margin-left: 15px;
     }
 }
 
@@ -42,7 +42,7 @@
         padding:0 4px;
     }
     .Shooter-Heading{
-        margin-left: 3px;
+        margin-left: 12px;
     }
 }
 @media screen and (max-width:500px){
@@ -50,6 +50,6 @@
         padding:0 0px;
     }
     .Shooter-Heading{
-        margin-left: 0px;
+        margin-left: 10px;
     }       
 }

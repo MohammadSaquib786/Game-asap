@@ -29,10 +29,10 @@ function Horrordiv() {
       
     }
   return (
-    <div className='horrordiv'>
+    <div className='maindiv'>
       {horrorData.map((horror) => (
          <Link to={`/detail/${horror.id}`}>
-       <Siglhorrorcard horror={horror}/>
+         <Siglhorrorcard horror={horror}/>
        </Link>
       ))}
     </div>
