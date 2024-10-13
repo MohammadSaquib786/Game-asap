@@ -114,7 +114,7 @@
 }  
 @media screen and (max-width:370px){
     .unorderlist{
-        border: 2px solid green;
+       
         list-style: none;
         display: flex;
         flex-direction: column;

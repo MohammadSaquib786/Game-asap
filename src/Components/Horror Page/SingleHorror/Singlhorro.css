@@ -10,7 +10,7 @@
 .CardImg{
     width:290px;
     height:200px;
-    border-radius: 8px;
+    -radius: 8px;
     cursor: pointer;
 }
 

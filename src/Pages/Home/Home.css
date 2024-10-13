@@ -5,11 +5,9 @@
     overflow-x: hidden;
     overflow-y: auto;
     background-color: #29232C;
-    /* border: 2px solid red;  */
 }
 
 .RightDiv {
-    /* width: calc(100% - 100px); */
     display: flex;
     flex-direction: column;
     overflow-y: auto;

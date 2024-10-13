@@ -1,5 +1,4 @@
 .login-div{
-    /* border: 2px solid green; */
     width: 100vw;
     color: #fff;
     background-color: #44334D;
@@ -16,17 +15,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid green; */
 }
+.h4-div{
+  display: none;
+}
+
 .form{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /* margin: 80px; */
     justify-content: center;
     align-items: center;
     gap: 20px;
-    /* border: 2px solid black;  */
 }
 
 .input-text{
@@ -34,8 +34,8 @@
     margin: 40px;
 }
 /* From Uiverse.io by Yaya12085 */ 
-.button-singup {
-    max-width: 320px;
+.button-singup  {
+    max-width: 250px;
     display: flex;
     padding: 0.5rem 1.4rem;
     font-size: 0.875rem;
@@ -87,3 +87,64 @@
   .input-text:focus {
     border: 2px solid grey;
   }
+
+
+  @media screen and (max-width:500px){
+
+  .head-login{
+      margin: 40px;
+      display: flex;
+      justify-content: space-between;
+  }
+  .login-heading{
+      margin-bottom: 10px;  
+  }
+  .form{
+      gap: 20px;
+  }
+  
+  .input-text{
+      margin: 20px;
+  }
+  }
+  @media screen and (max-width:380px){
+   
+    .head-login{
+        margin: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .login-heading{
+        margin-bottom: 10px;  
+    }
+    .form{
+        gap: 20px;
+    }
+    
+    .input-text{
+        margin: 20px;
+    }
+    }
+    @media screen and (max-width:400px){
+      .head-login{
+          margin: 40px;
+          display: flex;
+          justify-content: space-between;
+      }
+      .login-heading{
+          margin-bottom: 10px;  
+      }
+      .form{
+          gap: 20px;
+      }
+      
+      .input-text{
+          margin: 20px;
+      }
+      .h4-div{
+        display: block;
+      }
+      .h2-div{
+        display: none;
+      }
+      }
